@@ -1,0 +1,36 @@
+
+#Author- Pradnya
+#Switch Expression
+
+
+read -p "enter colour name " colour
+
+case $colour in
+
+"pink") echo "pink is my fav color"   #if user input pink this value is printed
+;;
+"violet") echo "violet is my fav color"
+;;
+"indigo") echo " indigo is my fav color"
+;;
+
+*) echo "invalid input please give valid color"
+esac
+
+echo "--------------------------------------------------------------------"
+
+#Regular expression
+
+read -p "enter the character " choice
+
+case $choice in
+  [A-Z])  echo "$choice,is an uppercase letter"
+  ;;
+  [a-z])  echo "$choice,is an lowecase letter"
+  ;;
+  [0-9]) echo "$choice,is a number"
+  ;;
+
+  *)  
+       echo   "invalid choice"
+esac

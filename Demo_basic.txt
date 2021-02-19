@@ -1,0 +1,21 @@
+
+#Author-Pradnya
+#Dynamic input
+
+echo "hello,welcome all"
+
+number_1=10
+number_2=30
+
+echo "first no is" $number_1 "and second no is" $number_2 
+
+echo "what is your name"
+read person
+echo "My name is" person
+
+read -p "enter your fav colour " favcolour
+echo "your fav colour is " $favcolour
+
+read -p "enter your first name " fname
+read -p "enter your last name  " lname
+echo "your full name is" $fname $lname
