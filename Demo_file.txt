@@ -1,0 +1,71 @@
+Author:Pradnya
+Module:File Operator
+
+
+file="pradip.txt"
+if [ -f $file ]
+then
+    echo "file available"
+else
+    echo "file not avialable"
+fi
+echo "------------------------------------"
+file="loop.txt"
+if [ -r $file ]
+then
+   echo "file readable"
+else
+   echo "file not readable"
+fi
+
+echo "------------------------------------"
+file="loop.txt"
+if [ -w $file ]
+then
+   echo "file writable"
+else
+   echo "file not writeable"
+fi
+
+echo "------------------------------------"
+file="loop.txt"
+if [ -x $file ]
+then
+   echo "file executable"
+else
+   echo "file not executable"
+fi
+echo "------------------------------------"
+file="Downloads"
+if [ -d $file ]
+then
+   echo "Directory present"
+else
+   echo "Directory not present"
+fi
+echo "------------------------------------"
+file="loop.txt"
+if [ -u $file ]
+then
+   echo "has UID permission"
+else
+   echo "has not UID permission"
+fi
+
+echo "------------------------------------"
+file="loop.txt"
+if [ -e $file ]
+then
+   echo "file exist"
+else
+   echo "file not exist"
+fi
+
+
+
+
+
+
+
+
+
