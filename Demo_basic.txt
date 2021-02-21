@@ -11,7 +11,7 @@ echo "first no is" $number_1 "and second no is" $number_2
 
 echo "what is your name"
 read person
-echo "My name is" person
+echo "My name is" $person
 
 read -p "enter your fav colour " favcolour
 echo "your fav colour is " $favcolour
